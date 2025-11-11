@@ -198,24 +198,26 @@ const Index = () => {
                     {service.description}
                   </CardDescription>
                 </CardHeader>
-                <CardContent className="space-y-3">
-                  <Button 
-                    variant="hero" 
-                    className="w-full gap-2"
-                    onClick={() => window.open(`https://wa.me/${phoneNumber}?text=Hi, I'm interested in ${service.title}`, '_blank')}
-                  >
-                    <MessageCircle className="h-4 w-4" />
-                    Book via WhatsApp
-                  </Button>
-                  <Button 
-                    variant="outline" 
-                    className="w-full gap-2"
-                    onClick={() => window.location.href = `mailto:${email}?subject=Booking: ${service.title}`}
-                  >
-                    <Mail className="h-4 w-4" />
-                    Book via Email
-                  </Button>
-                </CardContent>
+               <CardContent className="space-y-3 relative z-[9999]">
+  <Button 
+    variant="hero" 
+    className="w-full gap-2 cursor-pointer z-[9999]"
+    onClick={() => window.open(`https://wa.me/${phoneNumber}?text=Hi, I'm interested in ${service.title}`, '_blank')}
+  >
+    <MessageCircle className="h-4 w-4" />
+    Book via WhatsApp
+  </Button>
+
+  <Button 
+    variant="outline" 
+    className="w-full gap-2 cursor-pointer z-[9999]"
+    onClick={() => window.location.href = `mailto:${email}?subject=Booking: ${service.title}`}
+  >
+    <Mail className="h-4 w-4" />
+    Book via Email
+  </Button>
+</CardContent>
+
               </Card>
             ))}
           </div>
