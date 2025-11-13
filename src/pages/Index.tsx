@@ -76,7 +76,7 @@ const Index = () => {
               {/* Social Links */}
               <div className="flex gap-4 pt-4">
                 <a 
-                  href="https://github.com/kevinnani" 
+                  // href="https://github.com/kevinnani" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="w-12 h-12 rounded-full border border-border flex items-center justify-center hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all"
@@ -450,7 +450,7 @@ const Index = () => {
               I'm here to help bring your vision to life.
             </p>
             <div className="space-y-2 text-lg">
-              <p className="text-primary font-semibold">Contact No: {displayPhone1} | {displayPhone2}</p>
+              <p className="text-primary font-semibold">Contact No: {displayPhone1}</p>
               <p className="text-primary font-semibold">Email: {email}</p>
             </div>
           </div>
