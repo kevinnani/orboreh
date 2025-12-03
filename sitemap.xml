@@ -4,22 +4,15 @@
     <loc>https://orboreh.vercel.app/</loc>
   </url>
   <url>
-    <loc>https://orboreh.vercel.app/#services</loc>
+    <loc>https://orboreh.vercel.app/services</loc>
   </url>
-    <url>
-    <loc>https://orboreh.vercel.app/#tech-stack</loc>
+  <url>
+    <loc>https://orboreh.vercel.app/tech-stack</loc>
   </url>
-    <url>
-    <loc>https://orboreh.vercel.app/#services</loc>
-  </url>
-    <url>
+  <url>
     <loc>https://orboreh.vercel.app/projects</loc>
   </url>
   <url>
-    <loc>https://orboreh.vercel.app/#contact</loc>
+    <loc>https://orboreh.vercel.app/contact</loc>
   </url>
-   <url>
-    <loc>https://orboreh.vercel.app/#home</loc>
-  </url>
-
 </urlset>
