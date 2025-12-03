@@ -8,6 +8,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { ArrowRight, Mail, Github, Linkedin, Twitter, CheckCircle2, MessageCircle, TrendingUp, Search, Palette, Briefcase, GraduationCap, ImageIcon, Globe, Bot, Smartphone, Code2, Database, Layout, Server, Zap } from "lucide-react";
 import heroImage from "@/assets/hero-profile.jpg";
+import { Helmet } from "react-helmet-async";
 
 const Index = () => {
   const phoneNumber = "+917382592333"; // WhatsApp number
@@ -28,11 +29,23 @@ const Index = () => {
   };
 
   return (
+
+    <>
+         <Helmet>
+         <title>Orboreh | Home</title>
+        <meta
+          name="description"
+          content="Welcome to Orboreh – Professional portfolio and development services.
+          Explore the professional development services offered by Orboreh."
+        />
+        <link rel="canonical" href="https://orboreh.vercel.app/" />
+      </Helmet>
     <div className="min-h-screen bg-background relative">
       <ScrollAnimations />
       {/* <SocialMediaSidebar /> */}
       <Navbar />
       
+   
       {/* Hero Section */}
       <section id="home" className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-7xl mx-auto">
@@ -491,6 +504,8 @@ const Index = () => {
       {/* Chatbot */}
       <Chatbot />
     </div>
+    </>
+  
   );
 };
 
